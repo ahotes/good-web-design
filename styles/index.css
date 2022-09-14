@@ -1,0 +1,400 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*===Custom Stylings===*/
+:root{
+    --black: black;
+    --red: red;
+    --white: white;
+    --green: rgb(82, 240, 82);
+    --orange:#672705;
+    --highlight-red: #d99c9c;
+    --intro-content: #fb824d;
+    --pageHeader: #ff9a1f;
+    --navBar: #ffc175;
+}
+
+.font-Tahoma{
+    font-family: Tahoma, sans-serif;
+}
+.center{
+    text-align: center;
+}
+.highlight{
+	background-color: var(--white);
+}
+.highlight-red{
+    background-color: var(--highlight-red);
+}
+.black{
+	color: var(--black);
+}
+.white{
+    color: var(--white);
+}
+.red{
+    color: var(--red);
+}
+.green{
+    color: var(--green);
+}
+.orange{
+    color: var(--orange);
+}
+
+.link-color a{
+    color: gold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link-color a:hover{
+    text-decoration: underline;
+}
+
+.intro-header{
+    font-family: Consolas;
+    color: var(--orange);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.flexbox-content{
+    color: var(--white);
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.5rem;
+	text-indent: 2rem;
+}
+
+/*===Navbar layout===*/
+.sectionTitle{
+    font-family: 'Consolas';
+    font-size: 3rem;
+    padding: 1rem;
+    color: #302B27;
+    text-align: center;
+}
+
+.pageHeader{
+    background-color: var(--pageHeader);
+    width: 100%;
+    min-width: 200px;
+}
+
+/*===Navigation options===*/
+.navigation{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 auto;
+    background-color: var(--navBar);
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.navigation a{
+    text-decoration: none;
+    font-weight: lighter;
+    display: block;
+    color: #302B27;
+    padding: 0.9rem;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.navigation a:hover{
+    color: #000000;
+}
+
+.navigation li{
+    font-size: 1.3rem;
+    background-color: #ffa83d;
+    border-radius: 8px;
+    display: inline;
+    transition: all 150ms linear 0s; 
+}
+
+.navigation li:first-child{
+    margin-right: 1rem;
+}
+
+.navigation li:hover{
+    background-color: #aa5d00;
+}
+
+/*===Main website content layout===*/
+.introContent{
+    display: flex;
+    flex: 0 1 auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 500px;
+    max-height: 800px;
+    background-color: var(--intro-content);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.intro-flexbox{
+    width: 900px;
+    min-width: 200px;
+    min-height: 250px;
+}
+
+.goodDesign h1{
+    font-size: 2rem;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.badDesign h1{
+    font-size: 2rem;
+}
+
+.grid-content{
+    font-family: 'Roboto';
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.mainContent{
+    background-color: rgb(222, 75, 75);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.goodDesign > * {
+    margin: 0.8rem;
+}
+
+.badDesign > * {
+    margin: 0.8rem;
+}
+
+.gitHub > *{
+    margin: 0.5rem;
+}
+.MDN > *{
+    margin: 0.5rem;
+}
+.lingsCars > *{
+    margin: 0.5rem;
+}
+.craigsList > *{
+    margin: 0.5rem;
+}
+
+.mainContent-subheader{
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    background-color: white;
+}
+/*=================*/
+
+/*===Main content layout===*/
+.flex-container{
+    display: flex;
+    flex: 0 1 200px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.flex-container > .goodDesign{
+    width: 500px;
+    padding: 2rem;
+}
+
+.flex-container > .badDesign{
+    width: 500px;
+    padding: 2rem;
+}
+/*===Footer===*/
+
+footer{
+   background-color: var(--white);
+   display: flex;
+   flex: 0 1 auto;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: rgb(222, 75, 75, 0.85);
+   padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+footer ul{
+    list-style: none;
+    display: block;
+}
+footer p{
+    color:black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/*============*/
+
+@media (max-width: 300px){
+    .navigation{
+        height: 130px;
+    }
+
+    .navigation li {
+        font-size: 1.1rem;
+        background-color: #ffa83d;
+        border-radius: 8px;
+        display: inline;
+        transition: all 150ms linear 0s; 
+    }
+
+    .navigation > li{
+        margin: 0.3rem;
+    }
+
+    .introContent{
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1rem;
+        width: 100%;
+        max-height: 800px;
+        background-color: var(--intro-content);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+
+    .flexbox-content{
+        color: var(--white);
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-indent: 2rem;
+    }
+
+    .sectionTitle{
+        font-size: 2rem;
+    }
+
+    .gitHub > * {
+        margin: 0px;
+        padding: 0.5rem;
+    }
+    .MDN > *{
+        margin: 0px;
+        padding: 0.5rem;
+    }
+    .lingsCars > * {
+        margin: 0px;
+        padding: 0.5rem;
+    } 
+    .craigsList > *{
+        margin: 0px;
+        padding: 0.5rem;
+    }
+
+    .intro-flexbox{
+        width: 90%;
+    }
+
+    .intro-header{
+        font-size: 2.3rem;
+        text-align: left;
+        padding: 1rem 0px;
+        width: 100%;
+        display: block;
+    }
+
+    .navigation{
+        flex-flow: column nowrap;
+    }
+
+    .grid-content{
+        font-size: 15px;
+    }
+
+    .flex-container > .goodDesign{
+        padding: 0px;
+    }
+
+    .flex-container > .badDesign{
+        padding: 0px;
+    }
+    
+    .mainContent-subheader{
+        text-align: center;
+        font-family: Tahoma, sans-serif;
+        background-color: white;
+        width: 100%;
+        display: block;
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .intro-header{
+        font-size: 2.5rem;
+    }
+
+    .grid-content{
+        font-size: 1rem;
+    }
+
+    .intro-flexbox{
+        padding: 1rem;
+    }
+    
+    .flex-container > .goodDesign{
+        padding: 0.5rem;
+    }
+
+    .flex-container > .badDesign{
+        padding: 0.5rem;
+    }
+
+    .flexbox-content{
+        color: var(--white);
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-indent: 2rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 700px){
+    .introContent{
+        padding: 1rem;
+    }
+    
+    .intro-header{
+        font-size: 3rem;
+    }
+
+    .flexbox-content{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1200px){
+    .introContent{
+        padding: 1rem;
+    }
+}
